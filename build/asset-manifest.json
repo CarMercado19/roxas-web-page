@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.1858c355.js",
-    "static/js/453.4f7365fe.chunk.js": "/static/js/453.4f7365fe.chunk.js",
-    "static/media/roxas-portrait.jpg": "/static/media/roxas-portrait.0b5de0accba3e594a274.jpg",
-    "index.html": "/index.html",
-    "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.1858c355.js.map": "/static/js/main.1858c355.js.map",
-    "453.4f7365fe.chunk.js.map": "/static/js/453.4f7365fe.chunk.js.map"
+    "main.css": "/roxas-web-page/static/css/main.e6c13ad2.css",
+    "main.js": "/roxas-web-page/static/js/main.4446263e.js",
+    "static/js/453.4f7365fe.chunk.js": "/roxas-web-page/static/js/453.4f7365fe.chunk.js",
+    "static/media/roxas-portrait.jpg": "/roxas-web-page/static/media/roxas-portrait.0b5de0accba3e594a274.jpg",
+    "index.html": "/roxas-web-page/index.html",
+    "main.e6c13ad2.css.map": "/roxas-web-page/static/css/main.e6c13ad2.css.map",
+    "main.4446263e.js.map": "/roxas-web-page/static/js/main.4446263e.js.map",
+    "453.4f7365fe.chunk.js.map": "/roxas-web-page/static/js/453.4f7365fe.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.1858c355.js"
+    "static/js/main.4446263e.js"
   ]
 }
