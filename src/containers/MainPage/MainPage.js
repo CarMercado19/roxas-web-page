@@ -205,7 +205,7 @@ const MainPage = () => {
             🌟 <strong>¡Hola a todos!</strong> 🌟
           </Typography>
           <Typography variant="body1" align="center" paragraph>
-            Estoy emocionado/a de compartir con ustedes que la página en la que
+            Estoy emocionado de compartir con ustedes que la página en la que
             estoy trabajando está en una fase temprana de desarrollo. 🎉🔧
           </Typography>
           <Typography variant="body1" align="center" paragraph>
