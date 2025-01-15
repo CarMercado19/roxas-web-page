@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Box,
   Button,
@@ -19,6 +19,7 @@ import {
   FaInstagram,
   FaTiktok,
   FaTools,
+  FaDiscord,
 } from "react-icons/fa";
 import { PiHandHeartFill } from "react-icons/pi";
 import profileImage from "../../.assets/roxas-portrait.jpg";
@@ -42,14 +43,10 @@ const GridContainer = styled(Grid)(({ theme }) => ({
 }));
 
 const MainPage = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const theme = useTheme();
   const fullScreen = useMediaQuery(theme.breakpoints.down("sm"));
   const iconSize = 200;
-
-  const handleClose = () => {
-    setOpen(false);
-  };
 
   const YoutubeIcon = () => (
     <FaYoutube style={{ fontSize: iconSize, color: "#b2071d" }} />
@@ -82,6 +79,9 @@ const MainPage = () => {
   const TiktokIcon = () => (
     <FaTiktok style={{ fontSize: iconSize, color: "#fff" }} />
   );
+  const DiscordIcon = () => (
+    <FaDiscord style={{ fontSize: iconSize, color: "#7289da" }} />
+  );
   const TipIcon = () => (
     <svg
       width={iconSize}
@@ -98,6 +98,19 @@ const MainPage = () => {
       <PiHandHeartFill fill="url(#heart-gradient)" />
     </svg>
   );
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  useEffect(() => {
+    const hasSeenDialog = localStorage.getItem("dialogVisualizado");
+
+    if (!hasSeenDialog) {
+      setOpen(true);
+      localStorage.setItem("dialogVisualizado", "true");
+    }
+  }, []);
 
   return (
     <MainBox>
@@ -161,6 +174,12 @@ const MainPage = () => {
           size={4}
           title="TikTok"
           redirectionURL="https://www.tiktok.com/@roxas_19_"
+        />
+        <GridElements
+          icon={DiscordIcon}
+          size={4}
+          title="Discord"
+          redirectionURL="https://discord.gg/CptjqutDDG"
         />
         <GridElements
           icon={TipIcon}
