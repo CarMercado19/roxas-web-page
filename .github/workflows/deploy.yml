@@ -1,7 +1,13 @@
 name: Deploy to GitHub Pages
 
 on:
-  workflow_dispatch: # Permite que solo se ejecute manualmente desde GitHub Actions.
+  # Permite que el flujo se ejecute manualmente desde GitHub Actions.
+  workflow_dispatch:
+
+  # Ejecuta automáticamente el despliegue solo cuando se haga push a la rama `master`.
+  push:
+    branches:
+      - master
 
 jobs:
   deploy:
