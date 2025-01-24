@@ -47,6 +47,7 @@ const MainPage = () => {
   const theme = useTheme();
   const fullScreen = useMediaQuery(theme.breakpoints.down("sm"));
   const iconSize = 200;
+  const iconColor = "#f6f6f6";
 
   const YoutubeIcon = () => (
     <FaYoutube style={{ fontSize: iconSize, color: "#b2071d" }} />
@@ -58,45 +59,16 @@ const MainPage = () => {
     <FaFacebook style={{ fontSize: iconSize, color: "#3b5998" }} />
   );
   const InstagramIcon = () => (
-    <svg
-      width={iconSize}
-      height={iconSize}
-      viewBox="0 0 15 15"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <defs>
-        <linearGradient id="instagram-gradient" gradientTransform="rotate(45)">
-          <stop offset="0%" stopColor="#f09433" />
-          <stop offset="25%" stopColor="#e6683c" />
-          <stop offset="50%" stopColor="#dc2743" />
-          <stop offset="75%" stopColor="#cc2366" />
-          <stop offset="100%" stopColor="#bc1888" />
-        </linearGradient>
-      </defs>
-      <FaInstagram fill="url(#instagram-gradient)" />
-    </svg>
+    <FaInstagram style={{ fontSize: iconSize, color: iconColor }} />
   );
   const TiktokIcon = () => (
-    <FaTiktok style={{ fontSize: iconSize, color: "#fff" }} />
+    <FaTiktok style={{ fontSize: iconSize, color: iconColor }} />
   );
   const DiscordIcon = () => (
     <FaDiscord style={{ fontSize: iconSize, color: "#7289da" }} />
   );
   const TipIcon = () => (
-    <svg
-      width={iconSize}
-      height={iconSize}
-      viewBox="0 0 15 15"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <defs>
-        <linearGradient id="heart-gradient" gradientTransform="rotate(45)">
-          <stop offset="0%" stopColor="#c7000d" />
-          <stop offset="100%" stopColor="#a1182a" />
-        </linearGradient>
-      </defs>
-      <PiHandHeartFill fill="url(#heart-gradient)" />
-    </svg>
+    <PiHandHeartFill style={{ fontSize: iconSize, color: iconColor }} />
   );
 
   const handleClose = () => {
@@ -168,6 +140,7 @@ const MainPage = () => {
           size={4}
           title="Instagram"
           redirectionURL="https://www.instagram.com/roxas_19_"
+          bgColor="linear-gradient(135deg, rgba(240,148,51,1) 0%, rgba(230,104,60,1) 25%, rgba(220,39,67,1) 50%, rgba(204,35,102,1) 75%, rgba(188,24,136,1) 100%)"
         />
         <GridElements
           icon={TiktokIcon}
@@ -186,6 +159,7 @@ const MainPage = () => {
           size={4}
           title="Donacion"
           redirectionURL="https://streamelements.com/roxas-fb2oj/tip"
+          bgColor="linear-gradient(135deg, rgba(199,0,13,1) 0%, rgba(161,24,42,1) 100%)"
         />
       </GridContainer>
 
