@@ -21,6 +21,7 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
+          git config --global url."https://x-access-token:${{ secrets.ROXAS_PAGE_TOKEN }}".insteadOf "https://github.com"
 
       - name: Install dependencies
         run: yarn install
@@ -30,5 +31,5 @@ jobs:
 
       - name: Deploy to GitHub Pages
         env:
-          GITHUB_TOKEN: ${{ secrets.ROXAS_PAGE_TOKEN }} # Token de autenticación
+          ROXAS_PAGE_TOKEN: ${{ secrets.ROXAS_PAGE_TOKEN }}  # Usar el token personalizado
         run: yarn deploy
