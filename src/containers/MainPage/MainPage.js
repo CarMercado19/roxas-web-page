@@ -121,7 +121,7 @@ const MainPage = () => {
           icon={YoutubeIcon}
           size={4}
           title="YouTube"
-          redirectionURL="https://www.youtube.com/@Roxas-fb2oj"
+          redirectionURL="https://www.youtube.com/@Roxas-19"
           bgColor="#b2071d"
         />
         <GridElements
