@@ -17,7 +17,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # Define un entorno estable y quita el warning
+          node-version: '20'
 
       - name: Install dependencies
         run: yarn install
