@@ -163,7 +163,7 @@ const MainPage = () => {
           icon={TipIcon}
           size={4}
           title="Donacion"
-          redirectionURL="https://streamelements.com/roxas-fb2oj/tip"
+          redirectionURL="https://streamelements.com/roxas-19/tip"
           bgColor="linear-gradient(135deg, rgba(199,0,13,1) 0%, rgba(161,24,42,1) 100%)"
         />
       </GridContainer>
